@@ -32,7 +32,7 @@ export default function Home() {
       <nav className="nav" aria-label="Main navigation">
         <a href="#top" aria-label="GeoWeather home"><Brand /></a>
         <div className="nav-links"><a href="#features">Features</a><a href="#preview">Preview</a><a href="#open-source">Open source</a></div>
-        <a className="nav-cta" href={fDroid} target="_blank" rel="noreferrer">Get the app <span>↗</span></a>
+        <a className="nav-cta" href="#get-app">Get the app <span>↗</span></a>
       </nav>
 
       <main id="top">
@@ -49,9 +49,9 @@ export default function Home() {
 
         <section className="open-source section" id="open-source"><div className="source-panel reveal"><div><p className="eyebrow">03 / Open by design</p><h2>Good weather<br /><em>belongs to everyone.</em></h2><p>GeoWeather is free, open source and built in public. Read the code, report an issue, suggest an idea or help shape what comes next.</p><div className="source-actions"><a className="button button-light" href={repository} target="_blank" rel="noreferrer"><img className="button-icon" src={icons.github} alt="" />View on GitHub <span>↗</span></a><a className="button button-outline" href={`${repository}/issues`} target="_blank" rel="noreferrer">Report an issue</a></div></div><div className="source-stats"><Stat value="Apache-2.0" label="License" /><Stat value="Kotlin" label="100% native" /><Stat value="v2.3.0" label="Latest release" /><Stat value="15+" label="Contributors" /></div></div></section>
 
-        <section className="download section"><div className="download-heading"><p className="eyebrow">04 / Take it with you</p><h2>A better forecast<br /><em>is one tap away.</em></h2></div><div className="download-links"><Download href={`${repository}/releases/latest`} icon={icons.github} alt="GitHub" title="GitHub Releases" detail="Direct APK downloads" /><Download href={fDroid} icon={icons.fDroid} alt="F-Droid" title="F-Droid" detail="Free and open source" /><Download href="https://apps.obtainium.imranr.dev/" icon={icons.obtainium} alt="Obtainium" title="Obtainium" detail="Automatic updates" /></div></section>
+        <section className="download section" id="get-app"><div className="download-heading"><p className="eyebrow">04 / Take it with you</p><h2>A better forecast<br /><em>is one tap away.</em></h2></div><div className="download-links"><Download href={`${repository}/releases/latest`} icon={icons.github} alt="GitHub" title="GitHub Releases" detail="Direct APK downloads" /><Download href={fDroid} icon={icons.fDroid} alt="F-Droid" title="F-Droid" detail="Free and open source" /><Download href="https://apps.obtainium.imranr.dev/" icon={icons.obtainium} alt="Obtainium" title="Obtainium" detail="Automatic updates" /></div></section>
       </main>
-      <footer className="footer"><a href="#top"><Brand /></a><span>Weather, without the noise.</span><span>© FreetimeMaker · Apache-2.0</span><a href="mailto:FreetimeMaker@proton.me">Get in touch ↗</a></footer>
+      <footer className="footer"><a href="#top"><Brand /></a><span>Weather, without the noise.</span><span>© FreetimeMaker · GPL-3.0</span><a href="mailto:FreetimeMaker@proton.me">Get in touch ↗</a></footer>
     </div>
   );
 }
