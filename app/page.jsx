@@ -8,12 +8,11 @@ const email = 'mailto:FreetimeMaker@proton.me';
 const icons = {
   geoWeather: 'https://raw.githubusercontent.com/FreetimeMaker/GeoWeather/master/fastlane/metadata/android/en-US/images/icon.png',
   github: 'https://cdn.simpleicons.org/github/16201c',
-  fDroid: 'https://gitlab.com/fdroid/artwork/-/blob/631ce8c8d02a1fd4eec61cd833e5193dbf5aed94/fdroid-logo-2015/fdroid-logo.svg',
+  fDroid: 'https://f-droid.org/assets/fdroid-logo.svg',
   obtainium: 'https://raw.githubusercontent.com/ImranR98/Obtainium/main/assets/graphics/icon_small.png',
   lumaStore: 'https://raw.githubusercontent.com/FreetimeMaker/Luma-Store-Website/main/public/android-chrome-512x512.png',
   ownfdroid: 'https://raw.githubusercontent.com/FreetimeMaker/fdroid/main/icon.png',
-  openapk: 'https://avatars.githubusercontent.com/u/125956566?v=4',
-  lumastore: 'https://raw.githubusercontent.com/FreetimeMaker/Luma-Store-Android/master/fastlane/matadata/android/en-US/images/icon.png'
+  openapk: 'https://avatars.githubusercontent.com/u/125956566?v=4'
 };
 
 function Brand() {
@@ -57,7 +56,7 @@ export default function Home() {
         <section className="section" id="feedback"><div className="section-heading reveal"><p className="eyebrow">04 / Shape GeoWeather</p><h2>Your ideas can<br /><em>shape what comes next.</em></h2><p>Have an idea for improving GeoWeather? Share a suggestion or request a feature directly on GitHub.</p></div><div className="feature-grid"><FeedbackCard className="feature-blue" icon="✦" kicker="SUGGESTIONS" title="Share an idea." number="01" href={email} action="Send a suggestion">Got an idea for the app, design or weather experience? Tell us what you would change and why it would help.</FeedbackCard><FeedbackCard className="feature-yellow" icon="＋" kicker="FEATURE REQUESTS" title="Request a feature." number="02" href={email} action="Request a feature">Need something GeoWeather does not support yet? Open a feature request and describe the functionality you would like to see.</FeedbackCard></div></section>
 
         <section className="download section" id="get-app"><div className="download-heading"><p className="eyebrow">05 / Take it with you</p><h2>A better forecast<br /><em>is one tap away.</em></h2></div><div className="download-links"><Download href={`${repository}/releases/latest`} icon={icons.github} alt="GitHub Icon" title="GitHub Releases" detail="Direct APK downloads" /><Download href={fDroid} icon={icons.fDroid} alt="F-Droid Icon" title="F-Droid" detail="Free and open source" /><Download href="https://apps.obtainium.imranr.dev/redirect?r=obtainium://app/%7B%22id%22%3A%22com.freetime.geoweather%22%2C%22url%22%3A%22https%3A%2F%2Fgithub.com%2FFreetimeMaker%2FGeoWeather%22%2C%22author%22%3A%22Freetime%20Maker%22%2C%22name%22%3A%22GeoWeather%22%2C%22additionalSettings%22%3A%22%7B%5C%22includePrereleases%5C%22%3Afalse%7D%22%7D" icon={icons.obtainium} alt="Obtainium Icon" title="Obtainium" detail="Automatic updates" /><Download href="https://luma.free-time.me" icon={icons.lumaStore} alt="Luma Store Icon" title="Luma Store" detail="Install via Luma Store" />
-            <Download href="https://fdroid.free-time.me" icon={icons.ownfdroid} alt="Freetime Repository Icon" title="Freetime Repository" detail="Install via my own F-Droid Repository" /><Download href="https://www.openapk.net/en/geoweather/com.freetime.geoweather/" icon={icons.openapk} alt="OpenAPK Icon" title="OpenAPK" detail="Install via OpenAPK" /><Download href="https://luma.free-time.me/discover/ce113263-48cb-48ac-a77e-59e751607667" icon={icons.lumastore} alt="Luma Store Icon" title="Luma Store" detail="Download via Luma Store" /></div></section>
+            <Download href="https://fdroid.free-time.me" icon={icons.ownfdroid} alt="Freetime Repository Icon" title="Freetime Repository" detail="Install via my own F-Droid Repository" /><Download href="https://www.openapk.net/en/geoweather/com.freetime.geoweather/" icon={icons.openapk} alt="OpenAPK Icon" title="OpenAPK" detail="Install via OpenAPK" /></div></section>
       </main>
       <footer className="footer"><a href="#top"><Brand /></a><span>Weather, without the noise.</span><span>© FreetimeMaker · GPL-3.0</span><a href="mailto:FreetimeMaker@proton.me">Get in touch ↗</a></footer>
     </div>
